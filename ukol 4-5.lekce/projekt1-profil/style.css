@@ -1,0 +1,128 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+/*
+ BARVY
+ czechitas  #b92e81
+ pozadi     #bdc3c7
+ tmava      #31363b
+ delitka    #3f464d
+ portfolio  #e74c3c
+ facebook   #3b5998
+ twitter    #1da1f2
+*/
+
+
+body {
+    background-color: #bdc3c7;
+    
+}
+.profil {
+    width: 250px;
+    box-shadow: 1px -1px 5px lightslategray;
+}
+.foto {
+    width: 100%;
+}
+.logo {
+    background-color: #b92e81;
+    border-radius: 25px;
+}
+.hlavicka {
+    position: relative;
+}
+.logo {
+    position: absolute;
+    top: 142px;
+    left: 175px;
+}
+.obsah {
+    background-color:  #31363b;
+    padding: 15px;
+    margin-top: -20px;
+}
+h1 {
+    font-family: montserrat;
+    color: white;
+    font-size: 23px;
+    text-align: left;
+}
+p {
+    color: #bdc3c7;
+    font-family: source sans pro;
+}
+ul {
+    list-style: none;
+    font-family: montserrat;
+    margin-left: -2.5rem;
+    text-transform: uppercase; 
+ }
+
+.portfolio {
+    background-color:  #31363b;
+    text-align: center;
+   /* margin-top: -0.99rem;
+    margin-bottom: 0.07rem;*/
+    float: center;
+    width: 250px;
+    height: 40px;
+    border-top: 1px solid #3f464d;
+    border-bottom: 1px solid #3f464d;
+    margin-top:-20px;
+    padding: 8px 6px 6px 6px;
+}
+.portfolio a:hover {
+    padding: 6px 45px 10px 45px;
+    background: #e74c3c;
+    color: white;
+}
+
+.portfolio a:link {
+    text-decoration: none;
+}
+.portfolio a:visited {
+    color:white;
+}
+.facebook {
+    float: left;
+    background-color:  #31363b;
+    width: 125px;
+    text-align: center;
+    height: 40px;
+    padding: 8px 6px 6px 6px;
+    border-right: solid 1px #3f464d;
+    
+    
+}
+.facebook a:hover {
+    padding: 6px 16px 10px 16px;
+    background: #3b5998;
+    color: white;
+}  
+
+.facebook a:link {
+    text-decoration: none;
+}
+.facebook a:visited {
+    color:white;
+}
+.twitter {
+    float: right;
+    background-color:  #31363b;
+    width: 125px;
+    text-align: center;
+    height: 40px;
+    padding: 8px 6px 6px 6px;
+}
+.twitter a:hover {
+    padding: 6px 22px 10px 22px;
+    background: #1da1f2;
+    color: white;
+}
+.twitter a:link {
+    text-decoration: none;
+}
+.twitter a:visited {
+    color:white;
+}
