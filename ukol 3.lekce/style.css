@@ -1,0 +1,53 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+h1{
+    color:indigo;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+h2{
+    color: rgb(8, 8, 59);
+}
+
+ul{
+    line-height: 1.5;
+    font-style: italic;
+}
+table{
+    line-height: 3;
+    font-size: 0.8rem;
+}
+tr{
+    font-weight: bold;
+}
+
+td{
+    text-align: left;
+}
+a:link{
+    color:darkslategrey;
+}
+a:visited{
+    color:hotpink;
+}
+a:active{
+    color:yellowgreen;
+}
+a:hover{
+    color: darkolivegreen;
+}
+
+ul.seznam-mest>li:nth-last-child(2n){
+    background-color:lightgoldenrodyellow;
+}
+ul.seznam-reci>li:nth-last-child(2n){
+    background-color:lightgray;
+}
+.uvodni-veta{
+    font-weight:bold;
+    font-size: 1.2rem;
+}
+.ostatni-text{
+    font-size: 1rem;
+}
