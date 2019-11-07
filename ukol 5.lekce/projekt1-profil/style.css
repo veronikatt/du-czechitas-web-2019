@@ -41,6 +41,7 @@ body {
     background-color:  #31363b;
     padding: 15px;
     margin-top: -20px;
+    margin-bottom: -20px;
 }
 h1 {
     font-family: montserrat;
@@ -55,25 +56,31 @@ p {
 ul {
     list-style: none;
     font-family: montserrat;
-    margin-left: -2.5rem;
-    text-transform: uppercase; 
+    text-transform: uppercase;
+    padding: 0;
+    margin:0;
  }
 
+.odkazy {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #31363b;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
 .portfolio {
-    background-color:  #31363b;
-    text-align: center;
-   /* margin-top: -0.99rem;
-    margin-bottom: 0.07rem;*/
-    float: center;
     width: 250px;
-    height: 40px;
     border-top: 1px solid #3f464d;
     border-bottom: 1px solid #3f464d;
-    margin-top:-20px;
-    padding: 8px 6px 6px 6px;
+    text-align: center;
+    align-content: space-around;
+    height: 40px;
+    padding: 9px;
 }
+
 .portfolio a:hover {
-    padding: 6px 45px 10px 45px;
+    padding: 6px 42px 6px 42px;
     background: #e74c3c;
     color: white;
 }
@@ -84,45 +91,48 @@ ul {
 .portfolio a:visited {
     color:white;
 }
-.facebook {
-    float: left;
-    background-color:  #31363b;
-    width: 125px;
-    text-align: center;
-    height: 40px;
-    padding: 8px 6px 6px 6px;
-    border-right: solid 1px #3f464d;
-    
-    
-}
-.facebook a:hover {
-    padding: 6px 16px 10px 16px;
-    background: #3b5998;
-    color: white;
-}  
 
-.facebook a:link {
-    text-decoration: none;
-}
-.facebook a:visited {
-    color:white;
-}
-.twitter {
-    float: right;
-    background-color:  #31363b;
-    width: 125px;
-    text-align: center;
-    height: 40px;
-    padding: 8px 6px 6px 6px;
-}
-.twitter a:hover {
-    padding: 6px 22px 10px 22px;
-    background: #1da1f2;
-    color: white;
-}
-.twitter a:link {
-    text-decoration: none;
-}
-.twitter a:visited {
-    color:white;
-}
+ .facebook {
+        width: 125px;
+        height: 40px;
+        border-right:1px solid #3f464d;
+        text-align: center;
+        align-content: center;
+        padding: 10px;
+         
+    }
+
+    .facebook a:hover {
+        padding: 6px 15px 10px 15px;
+        background: #3b5998;
+        color: white;
+        width: 50%;
+        padding: 10px 20px 10px 10px;
+    }  
+    
+    .facebook a:link {
+        text-decoration: none;
+    }
+    .facebook a:visited {
+        color:white;
+
+    }
+    .twitter {
+        text-align: center;
+        width: 50%;
+    
+    }
+    .twitter a:hover {
+        padding: 6px 26px 10px 22px;
+        background: #1da1f2;
+        color: white;
+        
+    }
+    .twitter a:link {
+        text-decoration: none;
+    }
+    .twitter a:visited {
+        color:white;
+    }
+
+
