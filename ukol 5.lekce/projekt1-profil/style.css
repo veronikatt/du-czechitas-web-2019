@@ -65,18 +65,18 @@ ul {
     display: flex;
     flex-wrap: wrap;
     background-color: #31363b;
-    justify-content: space-around;
     align-items: center;
     align-content: center;
 }
 .portfolio {
     width: 250px;
+    /*width: 100% - správněji a pak 50% u těch dalších těch dvou*/
     border-top: 1px solid #3f464d;
     border-bottom: 1px solid #3f464d;
     text-align: center;
     align-content: space-around;
     height: 40px;
-    padding: 9px;
+    
 }
 
 .portfolio a:hover {
