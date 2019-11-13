@@ -29,5 +29,136 @@ body {
     background: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
+header {
+    width: 960px;
+}
+.header-hlavni {
+    display: flex;
+    background:  #e5e5e5;
+    align-items: center;
+
+}
+
+.hlavni-navigace ul {
+    display:flex;
+    list-style: none;
+  
+}
+.hlavni-navigace li {
+    margin-right: 50px;
+}
+
+.header-brand {
+    margin-right: 70px;
+    font-weight: bolder;
+}
+.header-brand a {
+    text-decoration: none;
+    
+
+}
+
+
+.hlavni-navigace ul a {
+    text-decoration: none;
+}
+
+.section1 {
+    background-image: url(pozadi.jpg);
+    position: relative;
+   height: 540px;
+
+}
+.background-picture {
+    width: 960px;
+   
+}
+.phone-picture {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+   
+h1 {
+    font-size: 90px;
+    color: white;
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+h2{
+    font-family: source sans pro;
+    color: white;
+    font-weight: 300;
+    font-size: 40px;
+    width: 500px;
+    margin-top: 10px;
+    
+}
+.button {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+
+}
+.button:hover {
+    background-color: #48418e;
+}
+.button1 {
+    margin-right: 20px;
+    background-color: #25133d;
+}
+.obsah {
+    position: absolute;
+    top: 80px;
+    padding-left: 40px;
+}
+.section2 {
+    display: flex;
+    
+}
+
+.letadlo {
+    height: 80px;
+    width: 8Opx;
+   
+}
+.chat {
+    height: 80px;
+    width: 8Opx;
+}
+.dobrodruzstvi {
+    height: 80px;
+    width: 8Opx;
+}
+
+.section-item {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 25px;
+    text-align: center;
+}    
+footer {
+    display:flex;
+    background-color: #25133d;
+    padding: 1rem;
+    height:50px;
+    color: white;
+    justify-content: center;
+    width: 960px;
+    
+    
+}
+.footer-copy {
+    display: flex;
+    margin-right: 10px;
+    
+}
+.web-od-a-do-z a {
+color: white;
+}
 
 /* ----- zde začni psát vlastní CSS ----- */
