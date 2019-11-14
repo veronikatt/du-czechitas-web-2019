@@ -58,7 +58,9 @@ header {
 }
 .header-brand a {
     text-decoration: none;
-
+}
+.header-brand a:active {
+    color: black;
 }
 
 .hlavni-navigace ul a {
@@ -66,7 +68,7 @@ header {
 }
 
 .hlavni-navigace ul a:hover {
-    color: magenta;
+    color:darkorchid;
     
 }
 
@@ -98,7 +100,7 @@ h2{
     color: white;
     font-weight: 300;
     font-size: 40px;
-    width: 500px;
+    width: 450px;
     margin-top: 10px;
     
 }
@@ -112,12 +114,11 @@ h2{
 
 }
 .button:hover {
-    background-color: #48418e;
-    color: magenta;
+    background-color: #25133d;
 }
 .button1 {
     margin-right: 20px;
-    background-color: #25133d;
+    background-color: #48418e;
 }
 .obsah {
     position: absolute;
@@ -151,12 +152,13 @@ h2{
 }    
 footer {
     display:flex;
-    background-color: #25133d;
+    background-color: #48418e;
     padding: 1rem;
     height:50px;
     color: white;
     justify-content: center;
     width: 960px;
+    margin-bottom: 100px;
     
     
 }
