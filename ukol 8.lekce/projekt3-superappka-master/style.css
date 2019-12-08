@@ -1,0 +1,259 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+ ::after,
+ ::before {
+	box-sizing: inherit;
+}
+
+
+/*
+ BARVY
+ sede pozadi      #e5e5e5
+ svetle fialova   #48418e
+ tmave fialova    #25133d
+
+ POUZITE PISMO
+ Source Sans Pro - rezy pisma light 300, regular 400 a bold 700
+ https://fonts.google.com/specimen/Roboto
+*/
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #e5e5e5;
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.obal {
+	width: 960px;
+	/* obsah stránky je omezený do pruhu širokého 960px */
+	margin: 0 auto;
+	/* pruh je na stránce vycentrovaný */
+	background: white;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+header {
+	width: 960px;
+	position: fixed;
+	z-index: 2;
+}
+
+.header-hlavni {
+	display: flex;
+	background: #e5e5e5;
+	align-items: center;
+}
+.hlavni-navigace a:hover {
+	transition: backroground colr;
+}
+
+.hlavni-navigace ul {
+	display: flex;
+	list-style: none;
+	
+}
+
+.hlavni-navigace li {
+	margin-right: 50px;
+}
+
+.header-brand {
+	margin-right: 70px;
+	font-weight: bolder;
+	margin-left: 10px;
+}
+
+.header-brand a {
+	text-decoration: none;
+}
+
+.header-brand a:active {
+	color: black;
+}
+
+.hlavni-navigace ul a {
+	text-decoration: none;
+}
+
+.hlavni-navigace ul a:hover {
+	color: darkorchid;
+}
+
+.section1 {
+	position: relative;
+	height: 540px;
+}
+
+.background-picture {
+	width: 960px;
+}
+
+.phone-picture {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+h1 {
+	font-size: 90px;
+	color: white;
+	font-family: Source Sans Pro;
+	font-weight: 400;
+	margin-bottom: 0;
+}
+
+h2 {
+	font-family: source sans pro;
+	color: white;
+	font-weight: 300;
+	font-size: 40px;
+	width: 450px;
+	margin-top: 10px;
+}
+
+.button {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 10px 20px;
+}
+
+.button:hover {
+	background-color: #25133d;
+	transition: color red;
+}
+
+.button1 {
+	margin-right: 20px;
+}
+
+.button:hover {
+	opacity: 0.5;
+	background-color: paleturquoise;
+	color: black;
+	transition: background-color 0.5s ease 0.1s;
+	transition: color 0.5s ease 0.1s;
+	transition: opacity 0.5s ease 0.1s
+
+}
+
+.obsah {
+	position: absolute;
+	top: 80px;
+	padding-left: 40px;
+}
+
+.section2 {
+	display: flex;
+}
+
+.letadlo {
+	height: 80px;
+	width: 8Opx;
+}
+
+.chat {
+	height: 80px;
+	width: 8Opx;
+}
+
+.dobrodruzstvi {
+	height: 80px;
+	width: 8Opx;
+}
+
+.section-item {
+	display: flex;
+	flex-direction: column;
+	padding: 40px 25px;
+	text-align: center;
+}
+
+footer {
+	display: flex;
+	background-color: #48418e;
+	padding: 1rem;
+	height: 50px;
+	color: white;
+	justify-content: center;
+	width: 960px;
+	margin-bottom: 100px;
+}
+
+.footer-copy {
+	display: flex;
+	margin-right: 10px;
+}
+
+.web-od-a-do-z a {
+	color: white;
+}
+
+.web-od-a-do-z a:hover {
+	text-decoration: none;
+}
+
+.hlavni-navigace-button {
+	margin-left: auto;
+	display: none;
+}
+
+@media (max-width: 767px) {
+	.hlavni-navigace {
+		display: none;
+	}
+	.header-hlavni {
+		height: 50px;
+	}
+	.hlavni-navigace-button {
+		display: block;
+	}
+	.section2 {
+		flex-wrap: wrap;
+	}
+	h1 {
+		margin-top: 0;
+		font-size: 50px;
+	}
+	h2 {
+		font-size: 25px;
+	}
+	.button {
+		width: 115px;
+	}
+	.button {
+		text-align: center;
+	}
+	
+
+}
+@media (max-width: 960px) {
+    .obal,
+    header,
+    footer,
+    .background-picture,
+    .description {
+        width: 100%
+    }
+    .phone-picture {
+        margin-bottom: 6px;
+        max-width: 42.1875%;
+    }
+    .section1 {
+        height: auto;
+	}
+	.obsah {
+		max-width: 42.1875%;
+	}
+}
